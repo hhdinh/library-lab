@@ -2,22 +2,22 @@ package libraryLab;
 
 public class Book {
 
-	String title;
-	boolean borrowed;
+	private String title;
+	private boolean borrowed;
 
 	// Creates a new Book
 	public Book(String bookTitle) {
-		title = bookTitle;
+		this.title = bookTitle;
 	}
 
 	// Marks the book as rented
 	public void borrowed() {
-		borrowed = true;
+		this.borrowed = true;
 	}
 
 	// Marks the book as not rented
 	public void returned() {
-		borrowed = false;
+		this.borrowed = false;
 	}
 
 	// Returns true if the book is rented, false otherwise
@@ -27,7 +27,7 @@ public class Book {
 
 	// Returns the title of the book
 	public String getTitle() {
-		return title;
+		return this.title;
 	}
 
 	public static void main(String[] arguments) {
